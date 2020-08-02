@@ -150,7 +150,6 @@ function loop() {
 				450,
 				200
 			);
-			endneko.style.visibility = "visible";
 			replay = false;
 		}
 		ctx.fillStyle = "#8dd9a3";
@@ -176,6 +175,7 @@ function loop() {
 		ctx.fillText("retry", 650, 325);
 		cat.style.visibility = "hidden";
 		fish.style.visibility = "hidden";
+		endneko.style.visibility = "visible";
 
 		//リスタート
 		document.onmousedown = function (event) {
@@ -199,7 +199,7 @@ function loop() {
 				score = 0;
 				frameCount = 0;
 				ctx.font = 'bold 60px "Courier","monospace"';
-				endneko.style.visibility = "visible";
+				endneko.style.visibility = "hidden";
 			}
 		};
 	}

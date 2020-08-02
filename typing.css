@@ -1,5 +1,7 @@
 body {
-	font-family: Courier, monospace;
+	/* font-family: Courier, monospace; */
+	/* font-family: Source Han Code JP, 平成角ゴシック, ＭＳ ゴシック; */
+	font-family: monospace, Osaka-Mono, Source Han Code JP, MSゴシック;
 }
 
 #images {
