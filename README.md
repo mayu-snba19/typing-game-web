@@ -6,7 +6,7 @@
 
 ## 解説
 Processing版ですが、
-<a href="https://qiita.com/Mayu_snba19/items/3480f21bfb51c9497e68" target="_blank">『Processingでタイピングゲームを作ろう!』]</a>に作り方が書いてあります。
+<a href="https://qiita.com/Mayu_snba19/items/3480f21bfb51c9497e68" target="_blank">『Processingでタイピングゲームを作ろう!』</a>に作り方が書いてあります。
 
 ## 実行環境
 macOS Catalina 10.15.5<br>
