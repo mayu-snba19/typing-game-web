@@ -56,7 +56,7 @@ var texttfCount = 0;
 var replay = false;
 var start = true;
 var frameCount = 0;
-ctx.font = '60px "Courier","monospace"';
+ctx.font = 'bold 60px "Courier","monospace"';
 ctx.textAlign = "center";
 var backMusic = new Audio();
 backMusic.src = "./data/back.mp3";
@@ -87,11 +87,11 @@ function loop() {
 
 	if (start) {
 		ctx.fillStyle = "white";
-		ctx.font = '50px "Courier","monospace"';
+		ctx.font = 'bold 50px "Courier","monospace"';
 		ctx.fillText("タイピングゲーム", 450, 250);
 		ctx.fillRect(350, 300, 200, 40);
 		ctx.fillStyle = "black";
-		ctx.font = '20px "Courier","monospace"';
+		ctx.font = 'bold 20px "Courier","monospace"';
 		ctx.fillText("start!", 450, 325);
 		cat.style.visibility = "hidden";
 		document.onmousedown = function (event) {
@@ -103,7 +103,7 @@ function loop() {
 			) {
 				start = false;
 				replay = true;
-				ctx.font = '60px "Courier","monospace"';
+				ctx.font = 'bold 60px "Courier","monospace"';
 			}
 		};
 	} else if (replay) {
@@ -129,6 +129,7 @@ function loop() {
 			frameCount = 0;
 		}
 		ctx.fillStyle = "white";
+		ctx.font = 'bold 60px "Courier","monospace"';
 		ctx.fillText(letter, 450, 230);
 		letter2 = "";
 		for (var i = 0; i < now; i++) {
@@ -139,9 +140,11 @@ function loop() {
 			letter2 += " ";
 		}
 		ctx.fillStyle = "red";
+		ctx.font = 'bold 60px "Courier","monospace"';
 		ctx.fillText(letter2, 450, 230);
 		if (time <= 0) {
 			ctx.fillStyle = "white";
+			ctx.font = 'bold 50px "Courier","monospace"';
 			ctx.fillText(
 				"SCORE: " + score + " ミスタイプ数: " + mistake,
 				450,
@@ -155,6 +158,7 @@ function loop() {
 		time--;
 		if (texttf) {
 			ctx.fillStyle = "red";
+			ctx.font = 'bold 50px "Courier","monospace"';
 			ctx.fillText("PLUS", 800, 80);
 			texttfCount++;
 			if (texttfCount >= 50) {
@@ -164,11 +168,11 @@ function loop() {
 		}
 	} else {
 		ctx.fillStyle = "white";
-		ctx.font = '50px "Courier","monospace"';
+		ctx.font = 'bold 60px "Courier","monospace"';
 		ctx.fillText("SCORE:" + score + "  ミスタイプ数 :" + mistake, 450, 200);
 		ctx.fillRect(550, 300, 200, 40);
 		ctx.fillStyle = "black";
-		ctx.font = '20px "Courier","monospace"';
+		ctx.font = 'bold 20px "Courier","monospace"';
 		ctx.fillText("retry", 650, 325);
 		cat.style.visibility = "hidden";
 		fish.style.visibility = "hidden";
@@ -194,7 +198,7 @@ function loop() {
 				texttfCount = 0;
 				score = 0;
 				frameCount = 0;
-				ctx.font = '60px "Courier","monospace"';
+				ctx.font = 'bold 60px "Courier","monospace"';
 				endneko.style.visibility = "visible";
 			}
 		};
@@ -235,6 +239,7 @@ document.addEventListener("keydown", (event) => {
 				letter2 += " ";
 			}
 			ctx.fillStyle = "red";
+			ctx.font = 'bold 60px "Courier","monospace"';
 			ctx.fillText(letter2, 450, 230);
 		} else if (key == "Shift") {
 			cnt++;
