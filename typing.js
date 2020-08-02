@@ -171,7 +171,6 @@ function loop() {
 		ctx.font = '20px "Courier","monospace"';
 		ctx.fillText("retry", 650, 325);
 		cat.style.visibility = "hidden";
-		endneko.style.visibility = "hidden";
 		fish.style.visibility = "hidden";
 
 		//リスタート
@@ -196,6 +195,7 @@ function loop() {
 				score = 0;
 				frameCount = 0;
 				ctx.font = '60px "Courier","monospace"';
+				endneko.style.visibility = "visible";
 			}
 		};
 	}
