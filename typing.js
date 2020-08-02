@@ -67,9 +67,6 @@ var playSound = false;
 var endneko = document.getElementById("endneko");
 var fish = document.getElementById("sakana");
 var cat = document.getElementById("cat");
-endneko.style.visibility = "hidden";
-fish.style.visibility = "hidden";
-cat.style.visibility = "hidden";
 
 function backMusicPlay() {
 	if (playSound == false) {
