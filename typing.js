@@ -56,8 +56,7 @@ var texttfCount = 0;
 var replay = false;
 var start = true;
 var frameCount = 0;
-//ctx.font = "60px Osaka-Mono";
-ctx.font = "60px sans-serif";
+ctx.font = "60px serif";
 ctx.textAlign = "center";
 var backMusic = new Audio();
 backMusic.src = "./data/back.mp3";
@@ -88,13 +87,11 @@ function loop() {
 
 	if (start) {
 		ctx.fillStyle = "white";
-		//ctx.font = "50px Osaka-Mono";
-		ctx.font = "50px sans-serif";
+		ctx.font = "50px serif";
 		ctx.fillText("タイピングゲーム", 450, 250);
 		ctx.fillRect(350, 300, 200, 40);
 		ctx.fillStyle = "black";
-		//ctx.font = "20px Osaka-Mono";
-		ctx.font = "20px sans-serif";
+		ctx.font = "20px serif";
 		ctx.fillText("start!", 450, 325);
 		cat.style.visibility = "hidden";
 		document.onmousedown = function (event) {
@@ -167,13 +164,11 @@ function loop() {
 		}
 	} else {
 		ctx.fillStyle = "white";
-		//ctx.font = "50px Osaka-Mono";
-		ctx.font = "50px sans-serif";
+		ctx.font = "50px serif";
 		ctx.fillText("SCORE:" + score + "  ミスタイプ数 :" + mistake, 450, 200);
 		ctx.fillRect(550, 300, 200, 40);
 		ctx.fillStyle = "black";
-		//ctx.font = "20px Osaka-Mono";
-		ctx.font = "20px sans-serif";
+		ctx.font = "20px serif";
 		ctx.fillText("retry", 650, 325);
 		cat.style.visibility = "hidden";
 
@@ -198,8 +193,7 @@ function loop() {
 				texttfCount = 0;
 				score = 0;
 				frameCount = 0;
-				//ctx.font = "60px Osaka-Mono";
-				ctx.font = "60px sans-serif";
+				ctx.font = "60px serif";
 				endneko.style.visibility = "hidden";
 				fish.style.visibility = "hidden";
 				cat.style.visibility = "hidden";
