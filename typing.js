@@ -72,12 +72,12 @@ function backMusicPlay() {
 	if (playSound == false) {
 		backMusic.play();
 		playSound = true;
-		var msg = '<i class="fas fa-volume-mute fa-2x icon"></i>';
+		var msg = '<i class="fas fa-volume-up fa-2x icon"></i>';
 		document.getElementById("iconAnime").innerHTML = msg;
 	} else {
 		backMusic.pause();
 		playSound = false;
-		var msg = '<i class="fas fa-volume-up fa-2x icon"></i>';
+		var msg = '<i class="fas fa-volume-mute fa-2x icon"></i>';
 		document.getElementById("iconAnime").innerHTML = msg;
 	}
 }
