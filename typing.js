@@ -167,8 +167,8 @@ function loop() {
 		}
 	} else {
 		ctx.fillStyle = "white";
-		ctx.font = 'bold 60px "Courier","monospace"';
-		ctx.fillText("SCORE:" + score + "  ミスタイプ数 :" + mistake, 450, 200);
+		ctx.font = 'bold 50px "Courier","monospace"';
+		ctx.fillText("SCORE:" + score + "  ミスタイプ数:" + mistake, 450, 200);
 		ctx.fillRect(550, 300, 200, 40);
 		ctx.fillStyle = "black";
 		ctx.font = 'bold 20px "Courier","monospace"';
