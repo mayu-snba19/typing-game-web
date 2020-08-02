@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>タイピングゲーム</title>
+		<link
+			href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div id="images">
+			<img src="./data/back.PNG" id="back" />
+			<img src="./data/cat.PNG" id="cat" />
+			<img src="./data/endneko.PNG" id="endneko" />
+			<img src="./data/sakana.PNG" id="sakana" />
+			<button
+				onclick="backMusicPlay();"
+				style="width: 60px; height: 60px;"
+				id="button"
+			>
+				<div id="iconAnime">
+					<i class="fas fa-volume-up fa-2x icon"></i>
+				</div>
+			</button>
+			<canvas id="canvas" width="900" height="600"></canvas>
+		</div>
+
+		<link rel="stylesheet" href="typing.css" />
+		<script src="typing.js" type="text/javascript"></script>
+	</body>
+</html>

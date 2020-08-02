@@ -1,0 +1,55 @@
+#images {
+	position: relative;
+	width: 900px;
+	height: 600px;
+	z-index: 2;
+}
+
+#back {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#endneko {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#sakana {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+#cat {
+	position: absolute;
+	top: 400px;
+	left: 0px;
+	z-index: 2;
+}
+
+#canvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+}
+
+.icon {
+	color: #000000;
+	z-index: 2;
+}
+
+#button {
+	position: absolute;
+	z-index: 10;
+	top: 530px;
+	background-color: Transparent;
+	border: none;
+	outline: none;
+}
